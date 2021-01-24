@@ -88,7 +88,6 @@ function addPagination(list) {
       }
       // give the first pagination button a class of "active"
       linkListUl.firstChild.firstChild.className = "active";
-      console.log(linkListUl.firstChild);
       // create an event listener on the `link-list` element
       // if the click target is a button:
       // remove the "active" class from the previous button
@@ -131,7 +130,6 @@ function searchBar(list) {
          let newList = [];
          for (let index = 0; index < list.length; index++) {
             if (list[index].name.first.toLowerCase().includes(text) || list[index].name.last.toLowerCase().includes(text)) {
-               console.log(list[index].name.first + " " + list[index].name.last)
                newList.push(list[index]);
             }
          }
