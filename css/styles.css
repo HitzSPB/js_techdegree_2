@@ -73,6 +73,11 @@ header h2 {
   color: #fff;
 }
 
+/* So the button click event works even through the overlay image. */
+.student-search button > * {
+  pointer-events: none;
+}
+
 .student-search button img {
   width: 25px;
 }

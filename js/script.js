@@ -122,6 +122,7 @@ function searchBar(list) {
 
    // Adding event listener for search button and looping through first and last names to see if it matches the search word
    searchSubmitButton.addEventListener('click', (e) => {
+      // Fixed the overlay image click issue with css code. 
       if (e.target.tagName === "BUTTON") {
          let input = document.querySelector('#search')
          const text = input.value.toLowerCase();
